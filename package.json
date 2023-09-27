@@ -1,0 +1,28 @@
+{
+  "name": "@nanosystems/crypto",
+  "version": "1.0.0",
+  "description": "Nanosystems Crypto for Javascript",
+  "main": "dist/build/ns-crypto.js",
+  "module": "./dist/esm/ns-crypto.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --module es6 --outDir ./dist/esm  --moduleResolution node ./src/ns-crypto.ts && terser ./dist/esm/ns-crypto.js --output ./dist/esm/ns-crypto.min.js -m",
+    "build-web": "webpack"
+  },
+  "author": "Luca Chiavelli",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-typescript": "^7.23.0",
+    "babel-loader": "^9.1.3",
+    "terser": "^5.20.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
