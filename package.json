@@ -1,6 +1,6 @@
 {
   "name": "@nanosystems/crypto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nanosystems Crypto for Javascript",
   "main": "dist/build/ns-crypto.js",
   "module": "./dist/esm/ns-crypto.min.js",
