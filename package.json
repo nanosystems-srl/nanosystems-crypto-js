@@ -6,13 +6,13 @@
   "module": "./dist/esm/ns-crypto.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --module es6 --outDir ./dist/esm  --moduleResolution node ./src/ns-crypto.ts && terser ./dist/esm/ns-crypto.js --output ./dist/esm/ns-crypto.min.js -m",
-    "build-web": "webpack"
+    "build-esm": "tsc --module es6 --outDir ./dist/esm  --moduleResolution node ./src/ns-crypto.ts && terser ./dist/esm/ns-crypto.js --output ./dist/esm/ns-crypto.min.js -m",
+    "build-cjs": "webpack"
   },
   "author": "Luca Chiavelli",
   "license": "ISC",
   "dependencies": {
-    "crypto-js": "^4.1.1"
+    "crypto-js": "3.1.9-1"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.20",
