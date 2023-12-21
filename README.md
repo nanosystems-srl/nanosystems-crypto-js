@@ -6,7 +6,7 @@ Nanosystems javascript library for cryptography
 ### Installation
 
 ```
-npm i git+https://gitblit.nanosystems.it/r/supremo/nanosystems-crypto-js.git
+npm i git+https://github.com/nanosystems-srl/nanosystems-crypto-js.git
 ```
 
 ### Usage
